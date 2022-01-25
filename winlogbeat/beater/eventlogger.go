@@ -171,9 +171,6 @@ runLoop:
 			e.log.Debugf("Read() returned %d records.", len(records))
 			if len(records) == 0 {
 				time.Sleep(time.Second)
-				if stop {
-					return
-				}
 				continue
 			}
 
